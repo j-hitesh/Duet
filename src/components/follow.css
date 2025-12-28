@@ -1,0 +1,53 @@
+.follow-wrapper {
+  max-width: 1350px;
+  margin: auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  font-size: 34px;
+  color: #6c6c6c;
+
+  animation: leftToRight 10s linear infinite;
+}
+
+/* PAUSE ON HOVER */
+.paused {
+  animation-play-state: paused !important;
+}
+
+/* LEFT → RIGHT MOTION */
+@keyframes leftToRight {
+  0% {
+    transform: translateX(-120px); /* start left */
+  }
+  100% {
+    transform: translateX(120px); /* move right */
+  }
+}
+
+.iconHover:hover {
+  color: linear-gradient(to right, #ffc28c, #ea60d5, #7d8dff);
+}
+
+.cta-btn {
+  display: inline-block;
+  padding: 18px 40px;
+  width: fit-content;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 50px;
+  color: white;
+  background: linear-gradient(90deg, #ffb88c, #ff62d3, #7d8dff);
+  transition: 0.4s ease;
+  box-shadow: 0 4px 18px rgba(255, 143, 234, 0.3);
+}
+
+/* Hover animation */
+.cta-btn:hover {
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 8px 25px rgba(255, 143, 234, 0.45);
+  background-size: 200%;
+  background-position: right;
+}

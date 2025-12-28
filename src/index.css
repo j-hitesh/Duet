@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+/* Swiper pagination dots */
+.swiper-pagination-bullet {
+  width: 11px !important;
+  height: 11px !important;
+  border: 2px solid #bdbdbd !important; /* grey border */
+  background: transparent !important;
+  opacity: 1 !important;
+  margin: 0 6px !important;
+  transition: 0.3s ease-in-out;
+}
+
+.swiper-pagination-bullet-active {
+  background: #4a4a4a !important; /* dark active dot */
+  border-color: #4a4a4a !important;
+  transform: scale(1.2);
+}
+
+@keyframes floatButton {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-6px); }
+  100% { transform: translateY(0px); }
+}
+
+.animate-floating {
+  animation: floatButton 3s ease-in-out infinite;
+}
+
+@keyframes popIn {
+  0% { transform: scale(0.4); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.animate-popIn {
+  animation: popIn 0.5s ease-out forwards;
+}
