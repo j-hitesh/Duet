@@ -22,7 +22,7 @@ const Follow = () => {
         </div>
 
         {/* CENTER TEXT */}
-        <h2 className="follow-text">Follow us on</h2>
+        <h2 className="follow-text space-x-10">Follow us on</h2>
 
         {/* RIGHT ICONS */}
         <div className="flex space-x-10">

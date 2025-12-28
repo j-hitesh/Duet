@@ -12,7 +12,7 @@ const Footer = () => {
   return (
     <footer className="bg-[#111111] text-white pt-20 pb-10 ">
      {/* LEFT SIDE – WHATSAPP */}
-<div className="fixed bottom-20 left-6 z-50">
+<div className="fixed bottom-10 left-6 z-50">
   <a
     href="https://wa.me/919310412672"
     target="_blank"
@@ -26,7 +26,7 @@ const Footer = () => {
 </div>
 
 {/* RIGHT SIDE – BACK TO TOP */}
-<div className="fixed bottom-20 right-6 z-50">
+<div className="fixed bottom-10 right-6 z-50">
   <button
     onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
     className="bg-white shadow-xl w-12 h-12 rounded-full flex items-center justify-center

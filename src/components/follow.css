@@ -2,6 +2,7 @@
   max-width: 1350px;
   margin: auto;
   padding: 0 20px;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -10,6 +11,27 @@
   color: #6c6c6c;
 
   animation: leftToRight 10s linear infinite;
+  white-space: nowrap; /* text break na ho */
+}
+@media (max-width: 1024px) {
+  .follow-wrapper {
+    font-size: 28px;
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .follow-wrapper {
+    font-size: 22px;
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .follow-wrapper {
+    font-size: 18px;
+    padding: 0 8px;
+  }
 }
 
 /* PAUSE ON HOVER */
