@@ -11,8 +11,8 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <footer className="bg-[#111111] text-white pt-20 pb-10 ">
-     <div className="fixed bottom-6 right-6 flex flex-col gap-4 z-50">
-
+     {/* LEFT SIDE – WHATSAPP */}
+<div className="fixed bottom-20 left-6 z-50">
   <a
     href="https://wa.me/919310412672"
     target="_blank"
@@ -23,17 +23,19 @@ const Footer = () => {
   >
     <FaWhatsapp className="text-white text-3xl" />
   </a>
+</div>
+
+{/* RIGHT SIDE – BACK TO TOP */}
+<div className="fixed bottom-20 right-6 z-50">
   <button
     onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
     className="bg-white shadow-xl w-12 h-12 rounded-full flex items-center justify-center
     hover:shadow-[0_0_25px_rgba(124,58,237,0.5)] hover:scale-110 
     transition-all duration-300 animate-floating animate-popIn"
   >
-    <span className="text-xl font-bold text-purple-600">↑</span>
+    <span className="text-xl font-bold text-purple-600"><i className="fa-solid fa-angle-up"></i></span>
   </button>
-
-     </div>
-
+</div>
 
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12">
 

@@ -35,7 +35,7 @@ const sendEmail = (e) => {
     <div className="pt-28">
 
       <section className="px-6 mb-28" data-aos="fade-up">
-  <div className="max-w-5xl mx-auto bg-white/60 backdrop-blur-xl 
+       <div className="max-w-5xl mx-auto bg-white/60 backdrop-blur-xl 
     border border-white/40 rounded-3xl py-16 px-6 md:px-16 text-center">
 
     {/* Heading */}
@@ -73,7 +73,7 @@ const sendEmail = (e) => {
         <FaWhatsapp className="text-green-500 text-3xl" />
         <a 
   href="tel:+91-9310412672" 
-  className="text-xl font-medium hover:text-purple-500 transition-all"
+  className="text-sm md:text-xl font-medium hover:text-purple-500 transition-all"
 >
   +91-9310412672
 </a>

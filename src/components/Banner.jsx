@@ -1,4 +1,4 @@
-import React from 'react'
+
 import BannerImg from "../assets/Banner.webp"
 import {Link} from "react-router-dom"
 
@@ -21,7 +21,7 @@ const Banner = () => {
   to="/contact"
   className="mt-6 px-6 md:px-10 py-3 md:py-4 bg-gradient-to-r from-purple-500 to-blue-500 text-white font-semibold rounded-full shadow-lg hover:scale-105 transition-all duration-300"
 >
- Transform Your Vision Into Reality  &nbsp; &nbsp; 
+ Transform Your Vision &nbsp; &nbsp; 
  <i className="fa-solid fa-arrow-right-long"></i>
 </Link>
 
